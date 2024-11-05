@@ -12,23 +12,21 @@ const config = {
   ],
 
   kit: {
-    // Switch to static adapter for GitHub Pages
     adapter: adapter({
+      // default options are shown
       pages: 'build',
       assets: 'build',
-      fallback: null,
+      fallback: undefined,
       precompress: false,
       strict: true
     }),
     
-    // This will need to be updated when you deploy to GitHub Pages
-    // to match your repository name, e.g. '/my-repo'
     paths: {
-      base: ''
+      base: '/Bizzy_Box'
     }
   },
 
-  extensions: ['.svelte', '.svx', '.md']  // Added .md extension
+  extensions: ['.svelte', '.svx', '.md']
 };
 
 export default config;
