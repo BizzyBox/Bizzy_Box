@@ -8,11 +8,12 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html',  // Add this for SPA fallback
-      strict: false  // Add this to handle all routes
+      fallback: 'index.html',
+      strict: false
     }),
+    // Remove or update the base path since we're using a custom domain now
     paths: {
-      base: '/Bizzy_Box'
+      base: ''  // Changed from '/Bizzy_Box' to ''
     }
   },
   preprocess: [
